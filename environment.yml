@@ -5,11 +5,11 @@ channels:
 dependencies:
   - python=3.10
   - pip
-  - numpy
+  - numpy>=1.24
   - pytorch>=2.1
-  - tqdm
-  - pyyaml
-  - matplotlib
-  - jupyter
+  - tqdm>=4.65
+  - pyyaml>=6.0
+  - matplotlib>=3.7
+  - jupyter>=1.0
   - pip:
       - pytest>=7.0
