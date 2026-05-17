@@ -1,0 +1,9 @@
+# Colab GPU runtime already ships torch>=2.1, numpy, matplotlib.
+# We list everything so a fresh CPU runtime also works.
+numpy>=1.24
+torch>=2.1
+tqdm>=4.65
+pyyaml>=6.0
+matplotlib>=3.7
+pytest>=7.0
+jupyter>=1.0

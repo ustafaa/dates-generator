@@ -10,3 +10,6 @@ dependencies:
   - tqdm
   - pyyaml
   - matplotlib
+  - jupyter
+  - pip:
+      - pytest>=7.0
