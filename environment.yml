@@ -1,0 +1,12 @@
+name: dates-generator
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pytorch>=2.1
+  - tqdm
+  - pyyaml
+  - matplotlib
