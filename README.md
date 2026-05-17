@@ -4,22 +4,17 @@ Conditional date generation given (DOW, MON, LEAP, DEC) conditions, with four
 research-backed generative models trained from scratch on a Google Colab GPU
 runtime.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<GITHUB_USER>/<REPO_NAME>/blob/main/notebook.ipynb)
-
-(Replace `<GITHUB_USER>` and `<REPO_NAME>` in the badge URL above with your fork's path — e.g. `ustafaa/dates-generator`. For private repos, Colab will prompt you to authorize GitHub access on first open.)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ustafaa/dates-generator/blob/main/notebook.ipynb)
 
 ## Run on Google Colab (training, evaluation, full walkthrough)
 
 1. Click the **Open In Colab** badge above (or open `notebook.ipynb` on Colab
-   manually via File -> Open notebook -> GitHub tab -> your fork).
-2. The notebook's first cell clones this private repo into `/content/submission`
-   and `!pip install -r requirements.txt`. For private repos you'll need a
-   GitHub Personal Access Token (PAT) -- the cell prompts for it interactively,
-   or you can paste it into the `GITHUB_TOKEN` variable before running.
-3. Runtime -> Change runtime type -> **GPU (T4)**.
-4. Run all cells. The notebook detects Colab, `!pip install -r requirements.txt`,
-   trains all four models (~60-90 min total on T4), evaluates, runs the CFG
-   ablation, and writes a `predictions.txt` from the example input.
+   manually via File -> Open notebook -> GitHub tab).
+2. Runtime -> Change runtime type -> **GPU (T4)**.
+3. Run all cells. The first cell clones this public repo into
+   `/content/dates-generator`, `!pip install -r requirements.txt`, then the
+   notebook trains all four models (~60-90 min total on T4), evaluates, runs
+   the CFG ablation, and writes a `predictions.txt` from the example input.
 
 ## Run inference locally (matches assignment CLI)
 
